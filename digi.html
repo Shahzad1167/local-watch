@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local digi watch</title>
+    <style>
+        
+        @font-face {
+  font-family: 'DS-Digital';
+  src: url('assets/fonts/DS-DIGI.TTF') format('truetype');
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .watch-container {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        h3{
+            color: white;
+            font-size: 24px;
+            margin-top: 230px;
+            margin-right: 0px;
+            margin-left: 0%;
+            justify-content: center;
+            width: 50%;
+            margin-left: 2%;
+        }
+
+        .watch{
+            position: relative;
+            width: 50%;
+            height: 100%;
+          
+            display: flex;
+            flex-direction: row;
+            margin-right: 0px;
+        }
+        .time-display{
+           position: absolute;
+            top: 180px;
+            left: 50px;
+            font-size: 30px;
+            
+            background-color: black;
+            width: 33%;
+            height: 25%;
+            bottom: 200px;
+            border-radius: 25%;
+        }
+         .date{
+           
+            z-index: 2;
+            font-family: 'Orbitron', monospace;
+  font-size: 32px;
+  color: #f80780; /* digital blue */
+  
+  text-shadow:
+    0 0 6px #00CFFF,
+    0 0 12px #1E90FF,
+    0 0 20px #00BFFF,
+    0 0 30px #7F2BFF;
+            padding-top: 10px;
+            
+         }
+        .time{
+           font-family: 'DS-Digital', monospace;
+  font-size: 32px;
+  color: #00CFFF; /* digital blue */
+  
+  text-shadow:
+    0 0 6px #00CFFF,
+    0 0 12px #1E90FF,
+    0 0 20px #00BFFF,
+    0 0 30px #7F2BFF;
+    padding-top: 20px;
+            
+        }
+        
+        .watch img{
+             width: 300px;
+             height: 600px;
+             object-fit: cover;
+             margin: 0px;
+             
+        }
+
+      
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Local digi watch</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Digi watch</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+           <div class="watch-container">
+            <h3 class="time-text">Time Never Lies</h3>
+              
+                
+                <div class="watch" id="watch">
+                    <div class="time-display">
+                    <div class="time" id="time">heyyy</div>
+                    <div class="date" id="date"> date</div>
+                    </div>
+                    <img src="assets/images/watch-img.png.png" alt="">
+                </div>
+
+              
+           </div>
+    </main>
+    <footer>
+        <p class="footer" style="text-align: center; padding: 10px; background-color: #333; color: white;">&copy; 2024 Local digi watch. All rights reserved.</p>
+    </footer>
+    <script src="digi.js"></script>
+</body>
+</html>
